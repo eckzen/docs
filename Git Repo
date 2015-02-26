@@ -1,0 +1,13 @@
+To create a New Repository on Git
+
+		echo "# docs" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		git remote add origin git@github.com:eckzen/docs.git
+		git push -u origin master
+
+Push an existing repository from the comannd line
+
+		git remote add origin git@github.com:eckzen/docs.git
+		git push -u origin master
