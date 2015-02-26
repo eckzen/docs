@@ -1,0 +1,23 @@
+No Bluetooth Adapter
+
+-Reinstall
+
+	sudo apt-get install --reinstall linux-headers-generic build-essential
+
+After that, compile and install the driver as follows -
+1) Download the latest backported driver package from here -
+
+ http://drvbp1.linux-foundation.org/~...tml/backports/
+
+2) Copy the downloaded tar.bz2 package to your Ubuntu Desktop > Right-click > Extract here.
+3) Open a terminal and run the following commands one-by-one
+Code:
+
+cd Desktop/backports-3.18-rc1-1
+make defconfig-ath9k
+make
+sudo make install
+
+4) Reboot for the newer driver to take effect.
+
+

@@ -1,0 +1,9 @@
+Fixing reboot/shutdown freezes
+
+If your machine freezes upon attempts to shutdown or reboot, try modifying /etc/default/grub. Open the file with gksudo gedit /etc/default/grub (graphical interface) or sudo nano /etc/default/grub (command-line). Any other plaintext editor (Vim, Emacs, Kate, Leafpad) is fine too. Find the line that starts with GRUB_CMDLINE_LINUX_DEFAULT and add reboot=bios to the end.
+
+If done properly it should result in something like GRUB_CMDLINE_LINUX_DEFAULT="quiet splash reboot=bios"
+
+Then save the file, run sudo update-grub and reboot in any way that's possible for you. After that, reboots and shutdowns should start working properly.
+
+With certain hardware (notably DELL) the kernel parameter that you add needs to be reboot=pci (instead of reboot=bios), the procedure remains the same. 
