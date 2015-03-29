@@ -1,0 +1,4 @@
+Locate the project directory
+
+sudo chown -R www-data:eckzen (folder/file)
+sudo chmod -R 776 (folder/file)
