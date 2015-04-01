@@ -1,0 +1,27 @@
+/* Option 0: Set height on parent (only works if parent has a fixed height) */
+ul { 
+  height: 43px; 
+}
+
+/* Option 1: Float the parent */
+ul { 
+  float: left; 
+}
+
+/* Option 2: Add overflow property to the parent */
+ul { 
+  overflow: auto; 
+}
+
+/* Option 3: Add empty div at bottom of parent container with a class "clearfix" */
+/*   Add to HTML: <div class="clearfix"></div> */
+.clearfix {
+  clear: both; 
+}
+
+/* Option 4: Add a class of .clearfix to parent element */
+.clearfix:after {
+  content: "";
+  display: table; 
+  clear: both; 
+}
