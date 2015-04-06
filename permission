@@ -6,3 +6,8 @@ sudo chmod -R 776 (folder/file)
 sudo adduser <username> www-data
 sudo chown -R www-data:www-data /var/www
 sudo chmod -R g+rw /var/www
+
+Cannot access through cd command blank folder
+
+solution:
+	chmod ug+x blank
