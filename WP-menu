@@ -1,0 +1,45 @@
+
+>>>_Underscores Menu mobile<<<
+
+Open navigation.js and change line 9 to use the next ID up the DOM from "site-navigation", which is "masthead" like this:
+
+	container = document.getElementById( 'masthead' );
+
+Then, scroll to bottom of that file where it starts with "button.onclick" and change all the mentions of "container" to "menu" like this:
+
+	button.onclick = function() {
+			if ( -1 !== menu.className.indexOf( 'toggled' ) )
+				menu.className = menu.className.replace( ' toggled', '' );
+			else
+				menu.className += ' toggled';
+
+Now, open header.php and find the <button class="menu-toggle">...</button> tag. Move it up above the <nav> tag.
+
+	<button class="menu-toggle">
+	...
+	</button>
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+	...
+	</nav>
+
+As for the CSS, I updated the 'Menus' section media query to be:
+
+	@media screen and (max-width: 600px) {
+		.menu-toggle,
+		.nav-menu.toggled {
+			display: block;
+		}
+		.nav-menu.toggled li {
+			width: 100%;
+			text-align: right;
+		}
+		.main-navigation, .nav-menu.toggled, .menu-toggle {
+			float: right;
+		}
+		.main-navigation ul {
+			display: none;
+		}
+		.menu-main-menu-container {
+			float: right;
+		}
+	}
