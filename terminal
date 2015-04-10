@@ -1,0 +1,4 @@
+To copy all inside the folder to another destination.
+
+	cp -a /source/. /dest/
+	
