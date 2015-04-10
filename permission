@@ -11,3 +11,5 @@ Cannot access through cd command blank folder
 
 solution:
 	chmod ug+x blank
+
+
