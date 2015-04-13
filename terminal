@@ -1,4 +1,17 @@
 To copy all inside the folder to another destination.
 
 	cp -a /source/. /dest/
-	
+
+	 -a option is an improved recursive option
+
+	 . at end of the source path is a specific cp syntax that allow to copy all files and folders, included hidden ones
+
+Another way:
+
+	rsync -r source/* destination
+
+The advantages of rsync are:
+
+After the initial sync, it will then copy only the files that have changed.
+
+You can use it over a network, convenient for files in $HOME, especially config files.
