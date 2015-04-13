@@ -1,0 +1,28 @@
+Report the crash
+
+After reporting got to /var/crash directory
+
+	cd /var/crash
+
+Remove the crash reports
+	
+	sudo rm /var/crash/*
+
+	* - means remove all files 
+
+Turn off apport to not see error report every boot
+
+	gksudo gedit /etc/default/apport
+
+# set this to 0 to disable apport, or to 1 to enable it
+# you can temporarily override this with
+# sudo service apport start force_start=1
+	enabled=1
+
+change to
+
+	enabled=0
+
+then
+
+	sudo restart apport
