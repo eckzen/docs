@@ -1,0 +1,8 @@
+
+PDF or HTML
+You can generate a PDF or an HTML copy of this guide using Transmuter.
+
+   gem install transmuter
+   sudo easy_install pygments
+   gem install pdfkit
+   brew install wkhtmltopdf
