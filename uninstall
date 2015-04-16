@@ -1,0 +1,28 @@
+
+
+To uninstall a program in Ubuntu
+
+First get the list of program:
+
+	sudo dpkg --get-selections | sed "s/.*deinstall//" | sed "s/install$//g" > ~/pkglist
+
+Second View the list:
+
+	cat ~/pkglist
+
+To have a copy of the list in txt format:
+
+	dpkg --get-selections > list.txt
+
+Reinstall these packages  in another computer:
+
+	sudo dpkg --set-selections < list.txt && sudo apt-get -u dselect-upgrade
+
+To remove a package:
+
+	sudo apt-get purge package_name
+
+	sudo apt-get autoremove
+
+
+
