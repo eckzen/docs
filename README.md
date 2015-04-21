@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f47c21406ee9582316792f32261405839837dd6
 # sass/
 |
 |-- base/                     # Default settings and normalise
@@ -52,7 +55,11 @@
 |-- style.scss                # Main file compiles to style.css
 
 
+<<<<<<< HEAD
 My Reference
+=======
+ My Reference
+>>>>>>> 1f47c21406ee9582316792f32261405839837dd6
 
 
 == LET'S CONNECT! ==
