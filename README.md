@@ -1,4 +1,4 @@
-#sass/
+# sass/
 |
 |-- base/                     # Default settings and normalise
 |   |-- _fonts.scss           # Define fonts
@@ -51,7 +51,7 @@
 |-- style.scss                # Main file compiles to style.css
 
 
-# My Reference
+ My Reference
 
 
 == LET'S CONNECT! ==
