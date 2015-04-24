@@ -1,0 +1,9 @@
+In the terminal, type:
+
+	sudo vi /etc/modprobe.d/blacklist_i2c_hid.conf
+
+then type the following into that file:
+
+	blacklist i2c_hid
+
+Save the file and restart your system, now check whether the touchpad is working fine.
