@@ -25,4 +25,8 @@ To remove a package:
 	sudo apt-get autoremove
 
 
+Uninstall apps
 
+	dpkg --list
+	sudo apt-get --purge remove <programname>
+	sudo apt-get remove <programname>

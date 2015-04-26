@@ -7,3 +7,7 @@ then type the following into that file:
 	blacklist i2c_hid
 
 Save the file and restart your system, now check whether the touchpad is working fine.
+
+Try this
+
+	gconftool-2 --set --type boolean /desktop/gnome/peripherals/touchpad/touchpad_enabled true

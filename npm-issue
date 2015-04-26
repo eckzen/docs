@@ -1,0 +1,7 @@
+NPM permission issue. Especially in using yeoman.
+
+	sudo chown -R $(whoami) ~/.npm
+
+ Permission in node_modules directory: (optional)
+
+ 	sudo chown -R `whoami` /usr/local/lib/node_modules
