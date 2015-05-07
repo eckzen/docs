@@ -1,0 +1,14 @@
+gulp learning
+
+	npm install gulp-concat
+
+gulp.task('sass', function() {
+  gulp.src('./sass/*.scss')
+      .pipe(sass())
+      .pipe(concat('style.css')) // this is what was missing
+      .pipe(gulp.dest('./')); // output to theme root
+});
+
+var  concat = require('gulp-concat');
+
+	.pipe(concat('app.js'))   nakapipe lang siya before gulp.dest
