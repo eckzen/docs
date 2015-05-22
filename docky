@@ -1,0 +1,22 @@
+Uninstall google chrome
+
+	sudo apt-get remove google-chrome-stable
+
+Remove all chrome links
+
+	sudo su
+	cd .local/share/applications
+	ls -l
+
+	rm -f -r google-chrome-stable.desktop
+
+Reinstall google chrome
+	
+	google-chrome-stable_current_amd64.deb
+
+
+Go here  <=== TRY THIS FIRST BEFORE UNINSTALLING
+	
+	/usr/share/application
+
+	click and drag google chrome  to Docky
