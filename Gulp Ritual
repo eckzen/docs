@@ -1,0 +1,25 @@
+Getting started in Gulp
+
+	npm install gulp -g    <<<< Do this once
+
+Create a dir and navigate inside
+
+Run this command
+	
+	npm init
+
+Optional
+
+	sudo apt-get update
+	sudo apt-get install ruby-full rubygems
+	sudo gem install sass
+
+Install Gulp in the directory
+
+	npm install gulp --save-dev
+
+Install Gulp packages
+
+	npm install gulp-uglify gulp-imagemin gulp-ruby-sass gulp-sourcemaps gulp-autoprefixer gulp-plumber gulp-concat imagemin-pngquant --save-dev
+
+	npm install --save imagemin-pngquant
