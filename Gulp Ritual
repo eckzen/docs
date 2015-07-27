@@ -4,10 +4,6 @@ Getting started in Gulp
 
 Create a dir and navigate inside
 
-Run this command
-	
-	npm init
-
 Optional
 
 	sudo apt-get update
@@ -18,8 +14,24 @@ Install Gulp in the directory
 
 	npm install gulp --save-dev
 
+Run this command
+	
+	npm init
+
 Install Gulp packages
+
+For Ubuntu
 
 	npm install gulp-uglify gulp-imagemin gulp-ruby-sass gulp-sourcemaps gulp-autoprefixer gulp-plumber gulp-concat imagemin-pngquant --save-dev
 
 	npm install --save imagemin-pngquant
+	
+For Windows
+
+	npm install gulp-uglify gulp-imagemin gulp-sass gulp-sourcemaps gulp-autoprefixer gulp-plumber gulp-concat imagemin-pngquant --save-dev
+
+	npm install browser-sync --save-dev
+
+	Installed Globally in Windows
+
+		npm install -g browser-sync
