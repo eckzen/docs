@@ -1,0 +1,53 @@
+##Browser sync
+
+// Change the default port
+ui: {
+    port: 8080
+}
+
+// Change the default weinre port
+ui: {
+    port: 8080,
+    weinre: {
+        port: 9090
+    }
+}
+
+// Disable UI completely
+ui: false
+
+#I use this and it works
+
+	var gulp        = require('gulp');
+	var browserSync = require('browser-sync').create();
+	var sass        = require('gulp-sass');
+
+	// Localhost watching scss/html files
+	gulp.task('serve', ['sass'], function() {
+
+	    browserSync.init({
+	        ui: {
+	            port: 80
+	        }
+	    });
+
+	    gulp.watch("_/sass/*.scss", ['sass']);
+	    gulp.watch("*.html").on('change', browserSync.reload);
+	});
+
+	// Compile sass into CSS & auto-inject into browsers
+	gulp.task('sass', function() {
+	    return gulp.src("_/sass/*.scss")
+	        .pipe(sass())
+	        .pipe(gulp.dest("_/component/css"))
+	        .pipe(browserSync.stream());
+	});
+
+	gulp.task('default', ['serve']);
+
+Code snippet paste above </body>
+
+<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.8.0.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
