@@ -1,0 +1,19 @@
+##Git cloning
+
+	git clone git@github.com:eckzen/docs.git
+
+	check for dependency application
+
+	npm install
+
+	then run gulp in terminal
+
+#Clone all the files including the branch
+
+	creat a directory
+
+	git clone --mirror git@github.com:eckzen/docs.git .git
+
+	git config --bool core.bare false
+
+	git reset --hard
