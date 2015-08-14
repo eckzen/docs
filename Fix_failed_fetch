@@ -1,0 +1,5 @@
+sudo apt-get update | grep "Failed" 
+
+Failed to fetch http://ppa.launchpad.net/chris-lea/node.js/ubuntu/dists/vivid/main/binary-amd64/Packages  404  Not Found
+
+sudo add-apt-repository --remove ppa:chris-lea/node.js
